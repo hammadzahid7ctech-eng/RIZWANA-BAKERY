@@ -1,0 +1,2154 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizwana Bakery | Bakery in Muhammad Nagar, Karachi</title>
+    <meta name="description" content="Explore cakes, pastries, breads, sweet treats and bakery favourites at Rizwana Bakery in Sector 11 E Muhammad Nagar, Karachi.">
+    <meta name="keywords" content="Rizwana Bakery, Bakery Karachi, Muhammad Nagar Bakery, Cakes Karachi, Pastries, Fresh Bread, Sweets">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Rizwana Bakery | Bakery in Muhammad Nagar, Karachi">
+    <meta property="og:description" content="Explore cakes, pastries, breads, sweet treats and bakery favourites at Rizwana Bakery in Sector 11 E Muhammad Nagar, Karachi.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS RESET & VARIABLES */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg-cream: #FAF6F0;
+            --bg-ivory: #FFFDF9;
+            --bg-warm: #F4EBE1;
+            --surface-card: #FFFFFF;
+            
+            --color-chocolate: #2C1810;
+            --color-soft-brown: #5C3A21;
+            --color-caramel: #C87D3B;
+            --color-gold: #D4AF37;
+            --color-beige: #E6D7C3;
+            --color-text-muted: #6B5E55;
+            
+            --font-heading: 'Marcellus', serif;
+            --font-body: 'Plus Jakarta Sans', sans-serif;
+            
+            --shadow-sm: 0 4px 12px rgba(44, 24, 16, 0.04);
+            --shadow-md: 0 8px 24px rgba(44, 24, 16, 0.08);
+            --shadow-lg: 0 16px 32px rgba(44, 24, 16, 0.12);
+            
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-full: 9999px;
+            
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --max-width: 1280px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-cream);
+            color: var(--color-chocolate);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            color: var(--color-chocolate);
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            font-family: var(--font-body);
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-padding {
+            padding: 96px 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 16px;
+            background: var(--bg-warm);
+            color: var(--color-caramel);
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-radius: var(--radius-full);
+            margin-bottom: 16px;
+            border: 1px solid rgba(200, 125, 59, 0.2);
+        }
+
+        .section-title {
+            font-size: 2.75rem;
+            margin-bottom: 16px;
+            color: var(--color-chocolate);
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--color-text-muted);
+            max-width: 600px;
+            margin: 0 auto 48px auto;
+        }
+
+        /* BUTTONS */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition-smooth);
+            gap: 8px;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--color-chocolate);
+            color: var(--bg-ivory);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-caramel);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-chocolate);
+            border: 1px solid var(--color-chocolate);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--color-chocolate);
+            color: var(--bg-ivory);
+            transform: translateY(-2px);
+        }
+
+        .btn-gold {
+            background-color: var(--color-caramel);
+            color: #ffffff;
+        }
+
+        .btn-gold:hover {
+            background-color: var(--color-chocolate);
+            transform: translateY(-2px);
+        }
+
+        /* NAVBAR */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: var(--transition-smooth);
+            padding: 20px 0;
+            background: rgba(250, 246, 240, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar.scrolled {
+            padding: 12px 0;
+            background: rgba(255, 253, 249, 0.95);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            letter-spacing: 1.5px;
+            color: var(--color-chocolate);
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--color-chocolate);
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--color-caramel);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-caramel);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-links a:hover::after, .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 4px;
+            z-index: 1001;
+        }
+
+        .mobile-toggle span {
+            width: 25px;
+            height: 2px;
+            background-color: var(--color-chocolate);
+            transition: var(--transition-smooth);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            padding: 160px 0 96px 0;
+            background: linear-gradient(180deg, var(--bg-ivory) 0%, var(--bg-cream) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--color-chocolate);
+        }
+
+        .hero-content p {
+            font-size: 1.15rem;
+            color: var(--color-text-muted);
+            margin-bottom: 32px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 28px;
+        }
+
+        .hero-phone {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            color: var(--color-chocolate);
+            font-size: 1.1rem;
+        }
+
+        .hero-phone:hover {
+            color: var(--color-caramel);
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .hero-image-wrapper img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            transition: var(--transition-smooth);
+        }
+
+        .hero-image-wrapper:hover img {
+            transform: scale(1.02);
+        }
+
+        /* FEATURE STRIP */
+        .feature-strip {
+            background-color: var(--bg-ivory);
+            padding: 40px 0;
+            border-top: 1px solid rgba(230, 215, 195, 0.4);
+            border-bottom: 1px solid rgba(230, 215, 195, 0.4);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .feature-card {
+            background-color: var(--bg-cream);
+            padding: 24px;
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(200, 125, 59, 0.1);
+            transition: var(--transition-smooth);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-sm);
+            border-color: var(--color-caramel);
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: var(--color-chocolate);
+        }
+
+        .feature-card p {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+        }
+
+        /* ABOUT SECTION */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .about-content p {
+            margin-bottom: 20px;
+            color: var(--color-text-muted);
+            font-size: 1.05rem;
+        }
+
+        /* MENU SECTION */
+        .menu-controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 450px;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 14px 20px;
+            border-radius: var(--radius-full);
+            border: 1px solid var(--color-beige);
+            background: var(--bg-ivory);
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            outline: none;
+            transition: var(--transition-smooth);
+        }
+
+        .search-box input:focus {
+            border-color: var(--color-caramel);
+            box-shadow: 0 0 0 3px rgba(200, 125, 59, 0.15);
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .filter-btn {
+            padding: 8px 20px;
+            border-radius: var(--radius-full);
+            background-color: var(--bg-ivory);
+            color: var(--color-chocolate);
+            border: 1px solid var(--color-beige);
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: var(--transition-smooth);
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background-color: var(--color-chocolate);
+            color: var(--bg-ivory);
+            border-color: var(--color-chocolate);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .product-card {
+            background: var(--surface-card);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(230, 215, 195, 0.5);
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .product-img {
+            height: 220px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-smooth);
+        }
+
+        .product-card:hover .product-img img {
+            transform: scale(1.05);
+        }
+
+        .product-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .product-category {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--color-caramel);
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .product-title {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+            color: var(--color-chocolate);
+        }
+
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+
+        .product-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: auto;
+            padding-top: 12px;
+            border-top: 1px solid var(--bg-cream);
+        }
+
+        .product-price-tag {
+            font-size: 0.85rem;
+            color: var(--color-soft-brown);
+            font-weight: 600;
+            background: var(--bg-warm);
+            padding: 4px 10px;
+            border-radius: var(--radius-sm);
+        }
+
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 48px;
+            color: var(--color-text-muted);
+            font-size: 1.1rem;
+            display: none;
+        }
+
+        /* CAKE COLLECTION */
+        .cake-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .cake-card {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            height: 320px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .cake-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-smooth);
+        }
+
+        .cake-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(44, 24, 16, 0.85) 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 24px;
+            transition: var(--transition-smooth);
+        }
+
+        .cake-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .cake-overlay h3 {
+            color: #ffffff;
+            font-size: 1.4rem;
+        }
+
+        /* BAKERY CATEGORIES */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .category-card {
+            background: var(--surface-card);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(230, 215, 195, 0.4);
+            text-align: center;
+            padding: 24px;
+            transition: var(--transition-smooth);
+        }
+
+        .category-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .category-img {
+            width: 100%;
+            height: 180px;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            margin-bottom: 16px;
+        }
+
+        .category-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .category-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+
+        .category-card p {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+            margin-bottom: 16px;
+        }
+
+        /* INTERACTIVE EXPLORERS */
+        .interactive-box {
+            background: var(--bg-ivory);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            border: 1px solid rgba(200, 125, 59, 0.15);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .options-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .option-btn {
+            padding: 10px 20px;
+            background: var(--bg-cream);
+            border: 1px solid var(--color-beige);
+            border-radius: var(--radius-full);
+            font-weight: 500;
+            color: var(--color-chocolate);
+            transition: var(--transition-smooth);
+        }
+
+        .option-btn:hover, .option-btn.active {
+            background: var(--color-caramel);
+            color: #ffffff;
+            border-color: var(--color-caramel);
+        }
+
+        .explorer-result {
+            background: var(--bg-cream);
+            padding: 24px;
+            border-radius: var(--radius-md);
+            text-align: center;
+            border-left: 4px solid var(--color-caramel);
+            font-size: 1.05rem;
+            color: var(--color-chocolate);
+        }
+
+        /* BAKERY EXPERIENCE */
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .experience-card {
+            background: var(--surface-card);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .experience-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .experience-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .experience-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 6px;
+        }
+
+        /* WHY CHOOSE US */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .why-card {
+            background: var(--bg-ivory);
+            padding: 28px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-beige);
+            transition: var(--transition-smooth);
+        }
+
+        .why-card:hover {
+            border-color: var(--color-caramel);
+            transform: translateY(-4px);
+        }
+
+        .why-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: var(--color-chocolate);
+        }
+
+        .why-card p {
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* GALLERY */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 16px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            height: 200px;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-smooth);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        /* LIGHTBOX */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 900px;
+            max-height: 80vh;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: var(--radius-sm);
+        }
+
+        .lightbox-btn {
+            position: absolute;
+            color: #ffffff;
+            font-size: 2rem;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.1);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-smooth);
+            user-select: none;
+        }
+
+        .lightbox-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .lightbox-prev { left: -60px; top: 50%; transform: translateY(-50%); }
+        .lightbox-next { right: -60px; top: 50%; transform: translateY(-50%); }
+        .lightbox-close { top: -50px; right: 0; }
+
+        /* BAKERY PLANNER */
+        .planner-steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        .planner-step {
+            background: var(--surface-card);
+            padding: 20px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-beige);
+        }
+
+        .planner-step h4 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            color: var(--color-caramel);
+        }
+
+        .planner-select {
+            width: 100%;
+            padding: 10px 14px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--color-beige);
+            background: var(--bg-cream);
+            font-family: var(--font-body);
+            color: var(--color-chocolate);
+            outline: none;
+        }
+
+        /* CONTACT & LOCATION */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+        }
+
+        .contact-info-card, .contact-form-card {
+            background: var(--surface-card);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(230, 215, 195, 0.6);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--color-beige);
+            background: var(--bg-cream);
+            font-family: var(--font-body);
+            outline: none;
+            transition: var(--transition-smooth);
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: var(--color-caramel);
+            background: #ffffff;
+        }
+
+        .form-message {
+            margin-top: 16px;
+            padding: 12px;
+            border-radius: var(--radius-sm);
+            background: #e8f5e9;
+            color: #2e7d32;
+            font-size: 0.9rem;
+            display: none;
+        }
+
+        .location-card {
+            background: var(--bg-warm);
+            padding: 32px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-beige);
+            margin-top: 24px;
+        }
+
+        /* FAQ ACCORDION */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--surface-card);
+            border-radius: var(--radius-md);
+            margin-bottom: 12px;
+            border: 1px solid rgba(230, 215, 195, 0.6);
+            overflow: hidden;
+        }
+
+        .faq-header {
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--color-chocolate);
+        }
+
+        .faq-icon {
+            font-size: 1.2rem;
+            transition: var(--transition-smooth);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-content {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+        }
+
+        .faq-item.active .faq-content {
+            padding: 0 24px 20px 24px;
+            max-height: 200px;
+        }
+
+        /* MODAL */
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-card {
+            background: var(--bg-ivory);
+            border-radius: var(--radius-lg);
+            max-width: 700px;
+            width: 100%;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 10;
+            background: var(--bg-ivory);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-img {
+            height: 100%;
+            min-height: 300px;
+        }
+
+        .modal-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .modal-body {
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* FOOTER */
+        .footer {
+            background-color: var(--color-chocolate);
+            color: var(--bg-warm);
+            padding: 80px 0 30px 0;
+            border-top: 3px solid var(--color-caramel);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand h2 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+        }
+
+        .footer-brand p {
+            color: var(--color-beige);
+            font-size: 0.95rem;
+            max-width: 320px;
+        }
+
+        .footer-title {
+            color: #ffffff;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            font-family: var(--font-heading);
+            letter-spacing: 1px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: var(--color-beige);
+            transition: var(--transition-smooth);
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--color-caramel);
+            padding-left: 4px;
+        }
+
+        .footer-contact p {
+            color: var(--color-beige);
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .footer-contact a {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(230, 215, 195, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--color-beige);
+        }
+
+        /* BACK TO TOP */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 44px;
+            height: 44px;
+            background: var(--color-caramel);
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-smooth);
+            z-index: 999;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* RESPONSIVE BREAKPOINTS */
+        @media (max-width: 1200px) {
+            .gallery-grid { grid-template-columns: repeat(4, 1fr); }
+            .feature-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 992px) {
+            .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+            .product-grid, .cake-grid, .categories-grid, .experience-grid, .why-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .planner-steps { grid-template-columns: 1fr; }
+            .hero-content { text-align: center; }
+            .hero-buttons { justify-content: center; }
+            .hero-phone { justify-content: center; }
+            .hero-image-wrapper img { height: 380px; }
+            .lightbox-prev { left: 10px; }
+            .lightbox-next { right: 10px; }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-toggle { display: flex; }
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                background: var(--bg-ivory);
+                flex-direction: column;
+                padding: 80px 30px;
+                box-shadow: var(--shadow-lg);
+                transition: var(--transition-smooth);
+            }
+            .nav-links.active { right: 0; }
+            .nav-actions .btn { display: none; }
+            .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+            .modal-card { grid-template-columns: 1fr; }
+            .modal-img { height: 200px; min-height: auto; }
+            .section-title { font-size: 2.2rem; }
+            .hero-content h1 { font-size: 2.5rem; }
+        }
+
+        @media (max-width: 678px) {
+            .product-grid, .cake-grid, .categories-grid, .experience-grid, .why-grid { grid-template-columns: 1fr; }
+            .feature-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .section-padding { padding: 60px 0; }
+            .hero { padding-top: 130px; }
+            .btn { width: 100%; }
+            .hero-buttons { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">RIZWANA BAKERY</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#specialties">Specialties</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <div class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="badge">RIZWANA BAKERY</span>
+                <h1>Freshly Baked Moments, Made Delicious</h1>
+                <p>Explore delicious bakery favourites, sweet treats and freshly baked ideas for everyday cravings and special moments.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+                <a href="tel:+923142104743" class="hero-phone">
+                    <span>📞</span> 03142104743
+                </a>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80" alt="Freshly baked artisan breads and pastries at Rizwana Bakery">
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURE STRIP -->
+    <section class="feature-strip">
+        <div class="container feature-grid">
+            <div class="feature-card">
+                <h3>Fresh Bakery</h3>
+                <p>Explore a variety of bakery favourites.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Sweet Treats</h3>
+                <p>Discover cakes, pastries and delicious desserts.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Everyday Favourites</h3>
+                <p>Perfect options for everyday bakery cravings.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Special Moments</h3>
+                <p>Explore bakery ideas for celebrations and occasions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section-padding" id="about">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80" alt="Rizwana Bakery counter with fresh display">
+            </div>
+            <div class="about-content">
+                <span class="badge">OUR STORY</span>
+                <h2 class="section-title">About Rizwana Bakery</h2>
+                <p>Rizwana Bakery is a cherished local bakery located in Sector 11 E Muhammad Nagar, Karachi, Pakistan. We are dedicated to offering a warm, welcoming experience for anyone seeking high-quality baked goods for their daily enjoyment or special family gatherings.</p>
+                <p>Our selection includes a wide array of bakery products ranging from rich celebration cakes and delicate pastries to soft daily breads, crisp biscuits, and delectable sweet treats. Whether you are dropping in for morning staples or planning a sweet addition to a celebration, Rizwana Bakery offers delicious bakery concepts crafted with care.</p>
+                <a href="#contact" class="btn btn-gold">Connect With Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="section-padding" id="menu" style="background-color: var(--bg-ivory);">
+        <div class="container">
+            <div class="text-center">
+                <span class="badge">OUR OFFERINGS</span>
+                <h2 class="section-title">Our Bakery Menu</h2>
+                <p class="section-subtitle">Browse through our delicious selection of freshly prepared bakery delights.</p>
+            </div>
+
+            <div class="menu-controls">
+                <div class="search-box">
+                    <input type="text" id="menuSearch" placeholder="Search bakery items...">
+                </div>
+                <div class="filter-buttons" id="filterButtons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="Cakes">Cakes</button>
+                    <button class="filter-btn" data-filter="Pastries">Pastries</button>
+                    <button class="filter-btn" data-filter="Breads">Breads</button>
+                    <button class="filter-btn" data-filter="Sweet Treats">Sweet Treats</button>
+                    <button class="filter-btn" data-filter="Savoury">Savoury</button>
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <!-- Javascript will populate products -->
+            </div>
+            <div class="no-results" id="noResults">No bakery item found.</div>
+        </div>
+    </section>
+
+    <!-- CAKE COLLECTION -->
+    <section class="section-padding" id="specialties">
+        <div class="container">
+            <div class="text-center">
+                <span class="badge">CELEBRATIONS</span>
+                <h2 class="section-title">Cakes for Special Moments</h2>
+                <p class="section-subtitle">Discover cake concepts designed to make your gatherings sweet and memorable.</p>
+            </div>
+            <div class="cake-grid">
+       
+                <div class="cake-card">
+                    <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=600&q=80" alt="Celebration Cake">
+                    <div class="cake-overlay">
+                        <h3>Celebration Cakes</h3>
+                    </div>
+                </div>
+                <div class="cake-card">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Chocolate Cake">
+                    <div class="cake-overlay">
+                        <h3>Chocolate Cakes</h3>
+                    </div>
+                </div>
+                <div class="cake-card">
+                    <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=600&q=80" alt="Cream Cake">
+                    <div class="cake-overlay">
+                        <h3>Cream Cakes</h3>
+                    </div>
+                </div>
+                <div class="cake-card">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" alt="Fruit Cake">
+                    <div class="cake-overlay">
+                        <h3>Fruit Cakes</h3>
+                    </div>
+                </div>
+                <div class="cake-card">
+                    <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=600&q=80" alt="Classic Cake">
+                    <div class="cake-overlay">
+                        <h3>Classic Cakes</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAKERY CATEGORIES -->
+    <section class="section-padding" id="categories" style="background-color: var(--bg-ivory);">
+        <div class="container">
+            <div class="text-center">
+                <span class="badge">VARIETY</span>
+                <h2 class="section-title">Bakery Categories</h2>
+                <p class="section-subtitle">Explore our distinct selections crafted for every taste preference.</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=600&q=80" alt="Cakes">
+                    </div>
+                    <h3>Cakes</h3>
+                    <p>Rich, soft, and delicious cakes for all occasions.</p>
+                    <a href="#menu" class="btn btn-secondary">Explore Cakes</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=600&q=80" alt="Pastries">
+                    </div>
+                    <h3>Pastries</h3>
+                    <p>Delicate layered pastries filled with smooth creams.</p>
+                    <a href="#menu" class="btn btn-secondary">Explore Pastries</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Breads">
+                    </div>
+                    <h3>Breads</h3>
+                    <p>Freshly baked daily breads and soft dinner buns.</p>
+                    <a href="#menu" class="btn btn-secondary">Explore Breads</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80" alt="Cookies">
+                    </div>
+                    <h3>Cookies</h3>
+                    <p>Crisp, buttery biscuits and sweet cookies.</p>
+                    <a href="#menu" class="btn btn-secondary">Explore Cookies</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80" alt="Sweet Treats">
+                    </div>
+                    <h3>Sweet Treats</h3>
+                    <p>Cupcakes, brownies, and bite-sized delights.</p>
+                    <a href="#menu" class="btn btn-secondary">Explore Sweet Treats</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80" alt="Savoury Snacks">
+                    </div>
+                    <h3>Savoury Snacks</h3>
+                    <p>Warm patties, samosas, and savory tea-time snacks.</p>
+                    <a href="#menu" class="btn btn-secondary">Explore Savoury</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAKERY MOOD EXPLORER -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <span class="badge">INTERACTIVE</span>
+                <h2 class="section-title">What Are You Craving?</h2>
+                <p class="section-subtitle">Select what you're in the mood for to get instant bakery ideas.</p>
+            </div>
+            <div class="interactive-box">
+                <div class="options-grid" id="moodOptions">
+                    <button class="option-btn active" data-text="Explore chocolate cakes, brownies, chocolate pastries and other chocolate-focused treats.">Something Chocolatey</button>
+                    <button class="option-btn" data-text="Explore fruit pastries, fresh cream items, and light cake options.">Something Sweet</button>
+                    <button class="option-btn" data-text="Explore freshly baked breads, buns, and daily warm bakery staples.">Something Fresh</button>
+                    <button class="option-btn" data-text="Explore cream cakes, custard filled pastries, and smooth desserts.">Something Creamy</button>
+                    <button class="option-btn" data-text="Explore crisp patties, samosas, rolls, and bakery savory snacks.">Something Savoury</button>
+                    <button class="option-btn" data-text="Explore tea biscuits, plain sponge slices, and lighter sweet bites.">Something Light</button>
+                </div>
+                <div class="explorer-result" id="moodResult">
+                    Explore chocolate cakes, brownies, chocolate pastries and other chocolate-focused treats.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OCCASION EXPLORER -->
+    <section class="section-padding" style="background-color: var(--bg-ivory);">
+        <div class="container">
+            <div class="text-center">
+                <span class="badge">MATCHING</span>
+                <h2 class="section-title">Find Something for Your Occasion</h2>
+                <p class="section-subtitle">Find the ideal bakery combination for any event.</p>
+            </div>
+            <div class="interactive-box">
+                <div class="options-grid" id="occasionOptions">
+                    <button class="option-btn active" data-text="Explore cakes and sweet treats suitable for birthday celebrations.">Birthday</button>
+                    <button class="option-btn" data-text="Explore large celebration cakes, platter sweet bites, and savoury items for group gatherings.">Family Gathering</button>
+                    <button class="option-btn" data-text="Explore special cakes and assorted pastry boxes for memorable moments.">Celebration</button>
+                    <button class="option-btn" data-text="Explore patties, tea biscuits, cake slices, and savoury rolls for evening tea.">Tea Time</button>
+                    <button class="option-btn" data-text="Explore boxed cookies, cupcakes, and dessert selections suitable for gifting.">Gift</button>
+                    <button class="option-btn" data-text="Explore fresh bread, simple cupcakes, and quick snacks for daily cravings.">Everyday Treat</button>
+                </div>
+                <div class="explorer-result" id="occasionResult">
+                    Explore cakes and sweet treats suitable for birthday celebrations.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAKERY EXPERIENCE -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <span class="badge">EVERYDAY MOMENTS</span>
+                <h2 class="section-title">Made for Every Moment</h2>
+                <p class="section-subtitle">Bakery items designed to fit perfectly into your daily routines and events.</p>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=600&q=80" alt="Morning Breakfast">
+                    <div class="experience-content">
+                        <h3>Morning Breakfast</h3>
+                        <p>Fresh bread and light buns to start your day.</p>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=600&q=80" alt="Tea Time">
+                    <div class="experience-content">
+                        <h3>Tea Time</h3>
+                        <p>Savoury patties and crisp biscuits for evening tea.</p>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=600&q=80" alt="Birthday Celebration">
+                    <div class="experience-content">
+                        <h3>Birthday Celebration</h3>
+                        <p>Delicious cakes to highlight special milestones.</p>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80" alt="Sweet Cravings">
+                    <div class="experience-content">
+                        <h3>Sweet Cravings</h3>
+                        <p>Rich brownies and cupcakes for quick sweet fixes.</p>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=600&q=80" alt="Special Occasions">
+                    <div class="experience-content">
+                        <h3>Special Occasions</h3>
+                        <p>Thoughtfully prepared bakery favorites for events.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE RIZWANA BAKERY -->
+    <section class="section-padding" style="background-color: var(--bg-ivory);">
+        <div class="container">
+            <div class="text-center">
+                <span class="badge">OUR COMMITMENT</span>
+                <h2 class="section-title">Why Rizwana Bakery?</h2>
+                <p class="section-subtitle">A trustworthy local destination for fresh and delightful bakery items.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>Bakery Variety</h3>
+                    <p>Explore different bakery categories catering to both sweet and savory tastes.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Sweet & Savoury Options</h3>
+                    <p>Choose from a balanced variety of bakery concepts from cakes to warm patties.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Everyday Favourites</h3>
+                    <p>Dependable options for your regular daily bread, tea-time, and snack cravings.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Celebration Ideas</h3>
+                    <p>Explore creative cake and pastry options for family parties and special moments.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Easy Contact</h3>
+                    <p>Reach the bakery directly via phone for all your questions and item inquiries.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Local & Welcoming</h3>
+                    <p>Proudly serving the Muhammad Nagar community with a warm bakery experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section-padding" id="gallery">
+        <div class="container">
+            <div class="text-center">
+                <span class="badge">VISUAL TOUR</span>
+                <h2 class="section-title">Bakery Gallery</h2>
+                <p class="section-subtitle">Take a look at our collection of freshly baked items and delicious creations.</p>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Javascript will load gallery images -->
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-btn lightbox-close" id="lightboxClose">&times;</span>
+            <span class="lightbox-btn lightbox-prev" id="lightboxPrev">&#10094;</span>
+            <img src="" id="lightboxImg" alt="Gallery preview">
+            <span class="lightbox-btn lightbox-next" id="lightboxNext">&#10095;</span>
+        </div>
+    </div>
+
+    <!-- BAKERY PLANNER -->
+    <section class="section-padding" style="background-color: var(--bg-ivory);">
+        <div class="container">
+            <div class="text-center">
+                <span class="badge">GUIDE</span>
+                <h2 class="section-title">Plan Your Bakery Selection</h2>
+                <p class="section-subtitle">Use our interactive planner to find recommended bakery directions.</p>
+            </div>
+            <div class="interactive-box">
+                <div class="planner-steps">
+                    <div class="planner-step">
+                        <h4>Step 1: Choose Occasion</h4>
+                        <select class="planner-select" id="plannerOccasion">
+                            <option value="Birthday">Birthday</option>
+                            <option value="Family Gathering">Family Gathering</option>
+                            <option value="Tea Time">Tea Time</option>
+                            <option value="Celebration">Celebration</option>
+                            <option value="Everyday">Everyday</option>
+                        </select>
+                    </div>
+                    <div class="planner-step">
+                        <h4>Step 2: Choose Category</h4>
+                        <select class="planner-select" id="plannerCategory">
+                            <option value="Cake">Cake</option>
+                            <option value="Pastry">Pastry</option>
+                            <option value="Bread">Bread</option>
+                            <option value="Sweet">Sweet</option>
+                            <option value="Savoury">Savoury</option>
+                        </select>
+                    </div>
+                    <div class="planner-step">
+                        <h4>Step 3: Choose Style</h4>
+                        <select class="planner-select" id="plannerStyle">
+                            <option value="Chocolate">Chocolate</option>
+                            <option value="Creamy">Creamy</option>
+                            <option value="Classic">Classic</option>
+                            <option value="Fresh">Fresh</option>
+                            <option value="Light">Light</option>
+                            <option value="Rich">Rich</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="explorer-result" id="plannerResult" style="margin-bottom: 20px;">
+                    Your Bakery Direction: Explore chocolate cake and celebration cake ideas.
+                </div>
+                <div class="text-center">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & LOCATION SECTION -->
+    <section class="section-padding" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <span class="badge">GET IN TOUCH</span>
+                <h2 class="section-title">Contact Rizwana Bakery</h2>
+                <p class="section-subtitle">Looking for a bakery item or planning something special? Contact Rizwana Bakery to discuss your requirements.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 20px;">Bakery Details</h3>
+                    <div style="margin-bottom: 24px;">
+                        <h4 style="font-size: 1rem; color: var(--color-caramel); margin-bottom: 4px;">PHONE NUMBER</h4>
+                        <p style="font-size: 1.2rem; font-weight: 600;"><a href="tel:+923142104743" style="color: var(--color-chocolate);">03142104743</a></p>
+                    </div>
+                    <div class="location-card">
+                        <h4 style="font-size: 1.1rem; margin-bottom: 8px;">Visit Rizwana Bakery</h4>
+                        <p style="color: var(--color-text-muted);">Sector 11 E Muhammad Nagar,<br>Karachi, Pakistan</p>
+                    </div>
+                </div>
+                <div class="contact-form-card">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 20px;">Send an Inquiry</h3>
+                    <form id="inquiryForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNum">Phone Number</label>
+                            <input type="tel" id="phoneNum" required placeholder="Your Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="prodCategory">Product / Category</label>
+                            <input type="text" id="prodCategory" placeholder="e.g. Chocolate Cake, Pastries">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" required placeholder="Write your inquiry here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+                        <div class="form-message" id="formSuccess">Thank you! Your inquiry has been prepared successfully.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section-padding" id="faq" style="background-color: var(--bg-ivory);">
+        <div class="container">
+            <div class="text-center">
+                <span class="badge">QUESTIONS</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions about Rizwana Bakery and our items.</p>
+            </div>
+            <div class="faq-container" id="faqAccordion">
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>1. What type of bakery items are available?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>We offer a variety of bakery items including cakes, pastries, breads, cookies, cupcakes, brownies, donuts, and savory items like patties, samosas, and rolls.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>2. Do you offer cakes?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Yes, we feature a range of cake concepts such as chocolate, vanilla, red velvet, fresh cream, fruit cakes, and black forest cakes for various occasions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>3. Can I ask about a specific bakery item?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Absolutly! You can call us directly at 03142104743 or send an inquiry via our contact form to ask about any specific item.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>4. Do you have sweet and savoury options?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Yes, our menu includes both sweet treats like cakes, pastries, and cookies, as well as savory options like warm patties, rolls, and samosas.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>5. Can I ask about product details?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Yes, please call us to inquire about specific item details, flavor options, or daily fresh items.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>6. How can I contact Rizwana Bakery?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>You can call us directly at 03142104743 or visit us in Sector 11 E Muhammad Nagar, Karachi, Pakistan.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>7. Where is Rizwana Bakery located?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>We are located in Sector 11 E Muhammad Nagar, Karachi, Pakistan.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>8. Can I ask about cake options?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-content">
+                        <p>Yes, you can inquire about our available cake styles, flavors, and celebration choices by reaching out to us by phone.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section-padding text-center" style="background: linear-gradient(180deg, var(--bg-cream) 0%, var(--bg-warm) 100%); border-top: 1px solid var(--color-beige);">
+        <div class="container">
+            <h2 class="section-title">Something Delicious Is Waiting</h2>
+            <p class="section-subtitle">Explore bakery favourites and contact Rizwana Bakery for your next sweet or savoury craving.</p>
+            <div class="hero-buttons" style="justify-content: center;">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="tel:+923142104743" class="btn btn-gold">Call Rizwana Bakery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>RIZWANA BAKERY</h2>
+                    <p>Fresh bakery ideas, sweet treats and everyday favourites for special moments and everyday cravings.</p>
+                </div>
+                <div>
+                    <h3 class="footer-title">QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#specialties">Specialties</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">CATEGORIES</h3>
+                    <ul class="footer-links">
+                        <li><a href="#menu">Cakes</a></li>
+                        <li><a href="#menu">Pastries</a></li>
+                        <li><a href="#menu">Breads</a></li>
+                        <li><a href="#menu">Sweet Treats</a></li>
+                        <li><a href="#menu">Cookies</a></li>
+                        <li><a href="#menu">Savoury Snacks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="footer-title">CONTACT US</h3>
+                    <p>📍 Sector 11 E Muhammad Nagar, Karachi, Pakistan</p>
+                    <p>📞 Phone: <a href="tel:+923142104743">03142104743</a></p>
+                    <p>💬 WhatsApp: <a href="https://wa.me/923142104743" target="_blank" rel="noopener">+923142104743</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2026 Rizwana Bakery. All rights reserved.</div>
+                <div>Freshly Baked Moments</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PRODUCT DETAIL MODAL -->
+    <div class="modal" id="productModal">
+        <div class="modal-card">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <div class="modal-img">
+                <img src="" id="modalImg" alt="Product Image">
+            </div>
+            <div class="modal-body">
+                <span class="product-category" id="modalCategory">Category</span>
+                <h3 id="modalTitle" style="font-size: 1.6rem; margin-bottom: 8px;">Product Name</h3>
+                <p id="modalDesc" style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 16px;">Description</p>
+                <div style="margin-bottom: 24px; font-size: 0.9rem; background: var(--bg-warm); padding: 10px; border-radius: var(--radius-sm);">
+                    <strong>Suitable Occasion:</strong> <span id="modalOccasion">General Bakery Enjoyment</span>
+                </div>
+                <a href="tel:+923142104743" class="btn btn-primary">Contact Bakery</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <div class="back-to-top" id="backToTop">↑</div>
+
+    <!-- VANILLA JAVASCRIPT -->
+    <script>
+        // DATA SETS
+        const products = [
+            // Cakes
+            { id: 1, name: "Chocolate Cake", category: "Cakes", desc: "Rich and moist chocolate sponge layers with deep cocoa flavor.", img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80", occasion: "Birthdays & Special Celebrations" },
+            { id: 2, name: "Vanilla Cake", category: "Cakes", desc: "Classic soft vanilla sponge crafted for everyday sweet cravings.", img: "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=600&q=80", occasion: "Family Gatherings & Birthdays" },
+            { id: 3, name: "Fresh Cream Cake", category: "Cakes", desc: "Light sponge topped and layered with smooth fresh cream.", img: "https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=600&q=80", occasion: "Parties & Anniversaries" },
+            { id: 4, name: "Red Velvet Cake", category: "Cakes", desc: "Striking velvet cake layers with subtle cocoa accents.", img: "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=600&q=80", occasion: "Special Celebrations" },
+            { id: 5, name: "Chocolate Fudge Cake", category: "Cakes", desc: "Decadent fudge cake coated in soft chocolate icing.", img: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=600&q=80", occasion: "Chocolate Lovers & Parties" },
+            { id: 6, name: "Fruit Cake", category: "Cakes", desc: "Traditional moist cake infused with sweet dried fruits.", img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80", occasion: "Tea Time & Evenings" },
+            
+            // Pastries
+            { id: 8, name: "Chocolate Pastry", category: "Pastries", desc: "Individual slice of moist chocolate layered pastry.", img: "https://images.unsplash.com/photo-1603532648955-039310d9ed75?auto=format&fit=crop&w=600&q=80", occasion: "Quick Sweet Cravings" },
+            { id: 9, name: "Cream Pastry", category: "Pastries", desc: "Soft slice filled with sweet whipped cream.", img: "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=600&q=80", occasion: "Tea Time Snack" },
+            { id: 10, name: "Fresh Fruit Pastry", category: "Pastries", desc: "Delicate pastry topped with refreshing fruit notes.", img: "https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=600&q=80", occasion: "Light Dessert Option" },
+            { id: 12, name: "Vanilla Pastry", category: "Pastries", desc: "Light and airy vanilla pastry slice.", img: "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80", occasion: "Daily Treat" },
+
+            // Breads
+            { id: 14, name: "Milk Bread", category: "Breads", desc: "Slightly sweet and soft milk-infused loaf.", img: "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=600&q=80", occasion: "Breakfast & Sandwiches" },
+            { id: 15, name: "Brown Bread", category: "Breads", desc: "Wholesome brown bread sliced for daily meals.", img: "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=600&q=80", occasion: "Healthy Daily Breakfast" },
+            { id: 16, name: "Sandwich Bread", category: "Breads", desc: "Square-sliced soft bread suitable for toast and sandwiches.", img: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=600&q=80", occasion: "Lunchboxes & Snacks" },
+            { id: 17, name: "Fresh Buns", category: "Breads", desc: "Soft dinner buns ideal for quick tea snacks.", img: "https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?auto=format&fit=crop&w=600&q=80", occasion: "Tea Time & Burgers" },
+
+            // Sweet Treats
+            { id: 18, name: "Cookies", category: "Sweet Treats", desc: "Crisp and buttery baked cookies for tea.", img: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80", occasion: "Daily Tea Time" },
+            { id: 19, name: "Cupcakes", category: "Sweet Treats", desc: "Individual cupcakes topped with smooth icing.", img: "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=600&q=80", occasion: "Kids Parties & Treats" },
+            { id: 20, name: "Brownies", category: "Sweet Treats", desc: "Dense fudge chocolate brownies with rich cocoa.", img: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80", occasion: "Sweet Cravings" },
+            { id: 22, name: "Donuts", category: "Sweet Treats", desc: "Soft ring donuts coated with sweet glaze.", img: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80", occasion: "Youth Snack & Treats" },
+            { id: 23, name: "Sweet Bites", category: "Sweet Treats", desc: "Assorted bite-sized bakery sweets.", img: "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80", occasion: "Gatherings & Sharing" },
+
+            // Savoury
+            { id: 24, name: "Patties", category: "Savoury", desc: "Flaky golden puff pastry filled with savory filling.", img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80", occasion: "Evening Tea Snack" },
+            { id: 25, name: "Samosa", category: "Savoury", desc: "Crisp pastry pocket packed with spiced potatoes or veggies.", img: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80", occasion: "Traditional Tea Time" },
+            { id: 26, name: "Rolls", category: "Savoury", desc: "Soft roll wrapped around tasty savory filling.", img: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=600&q=80", occasion: "Quick Lunch Snack" },
+            { id: 27, name: "Sandwiches", category: "Savoury", desc: "Freshly prepared bakery sandwiches.", img: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80", occasion: "Light Lunch or Breakfast" },
+            { id: 28, name: "Bakery Snacks", category: "Savoury", desc: "Crisp and warm savory tea-time options.", img: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=600&q=80", occasion: "Casual Munching" }
+        ];
+
+        const galleryImages = [
+            { url: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80", alt: "Fresh Bread" },
+            { url: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80", alt: "Chocolate Cake" },
+            { url: "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=600&q=80", alt: "Cupcakes" },
+            { url: "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=600&q=80", alt: "Pastries" },
+            { url: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80", alt: "Cookies" },
+            { url: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80", alt: "Brownies" },
+            { url: "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=600&q=80", alt: "Bakery Counter" },
+            { url: "https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?auto=format&fit=crop&w=600&q=80", alt: "Freshly Baked Goods" },
+            { url: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=600&q=80", alt: "Celebration Cake" },
+            { url: "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80", alt: "Bakery Products" }
+        ];
+
+        // DOM ELEMENTS
+        const navbar = document.getElementById('navbar');
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+        const productGrid = document.getElementById('productGrid');
+        const noResults = document.getElementById('noResults');
+        const menuSearch = document.getElementById('menuSearch');
+        const filterButtons = document.getElementById('filterButtons');
+        const galleryGrid = document.getElementById('galleryGrid');
+        const productModal = document.getElementById('productModal');
+        const modalClose = document.getElementById('modalClose');
+
+        // STICKY NAVBAR & BACK TO TOP
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            const backToTop = document.getElementById('backToTop');
+            if (window.scrollY > 400) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+
+            // Active Nav Link Update
+            const sections = document.querySelectorAll('section');
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(a => {
+                a.classList.remove('active');
+                if (a.getAttribute('href') === `#${current}`) {
+                    a.classList.add('active');
+                }
+            });
+        });
+
+        // MOBILE MENU TOGGLE
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // BACK TO TOP ACTION
+        document.getElementById('backToTop').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // RENDER PRODUCTS
+        function renderProducts(items) {
+            productGrid.innerHTML = '';
+            if (items.length === 0) {
+                noResults.style.display = 'block';
+                return;
+            } else {
+                noResults.style.display = 'none';
+            }
+
+            items.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                card.innerHTML = `
+                    <div class="product-img">
+                        <img src="${product.img}" alt="${product.name}">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">${product.category}</span>
+                        <h3 class="product-title">${product.name}</h3>
+                        <p class="product-desc">${product.desc}</p>
+                        <div class="product-footer">
+                            <span class="product-price-tag">Ask for Details</span>
+                            <button class="btn btn-secondary view-btn" style="padding: 6px 14px; font-size: 0.85rem;" data-id="${product.id}">View Details</button>
+                        </div>
+                    </div>
+                `;
+                productGrid.appendChild(card);
+            });
+
+            // Attach modal triggers
+            document.querySelectorAll('.view-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const id = parseInt(e.target.getAttribute('data-id'));
+                    openProductModal(id);
+                });
+            });
+        }
+
+        // FILTER & SEARCH LOGIC
+        let currentFilter = 'all';
+        let currentSearch = '';
+
+        function filterProducts() {
+            let filtered = products.filter(p => {
+                const matchesFilter = currentFilter === 'all' || p.category === currentFilter;
+                const matchesSearch = p.name.toLowerCase().includes(currentSearch) || p.desc.toLowerCase().includes(currentSearch) || p.category.toLowerCase().includes(currentSearch);
+                return matchesFilter && matchesSearch;
+            });
+            renderProducts(filtered);
+        }
+
+        filterButtons.addEventListener('click', (e) => {
+            if (e.target.classList.contains('filter-btn')) {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                currentFilter = e.target.getAttribute('data-filter');
+                filterProducts();
+            }
+        });
+
+        menuSearch.addEventListener('input', (e) => {
+            currentSearch = e.target.value.toLowerCase().trim();
+            filterProducts();
+        });
+
+        // PRODUCT MODAL
+        function openProductModal(id) {
+            const product = products.find(p => p.id === id);
+            if (!product) return;
+
+            document.getElementById('modalImg').src = product.img;
+            document.getElementById('modalCategory').innerText = product.category;
+            document.getElementById('modalTitle').innerText = product.name;
+            document.getElementById('modalDesc').innerText = product.desc;
+            document.getElementById('modalOccasion').innerText = product.occasion;
+
+            productModal.classList.add('active');
+        }
+
+        modalClose.addEventListener('click', () => {
+            productModal.classList.remove('active');
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === productModal) {
+                productModal.classList.remove('active');
+            }
+        });
+
+        // BAKERY MOOD & OCCASION EXPLORER
+        function setupExplorer(optionsContainerId, resultId) {
+            const container = document.getElementById(optionsContainerId);
+            const resultBox = document.getElementById(resultId);
+
+            container.addEventListener('click', (e) => {
+                if (e.target.classList.contains('option-btn')) {
+                    container.querySelectorAll('.option-btn').forEach(b => b.classList.remove('active'));
+                    e.target.classList.add('active');
+                    resultBox.innerText = e.target.getAttribute('data-text');
+                }
+            });
+        }
+
+        setupExplorer('moodOptions', 'moodResult');
+        setupExplorer('occasionOptions', 'occasionResult');
+
+        // BAKERY PLANNER LOGIC
+        const plannerOccasion = document.getElementById('plannerOccasion');
+        const plannerCategory = document.getElementById('plannerCategory');
+        const plannerStyle = document.getElementById('plannerStyle');
+        const plannerResult = document.getElementById('plannerResult');
+
+        function updatePlanner() {
+            const occ = plannerOccasion.value;
+            const cat = plannerCategory.value;
+            const sty = plannerStyle.value;
+
+            plannerResult.innerText = `Your Bakery Direction: Perfect choice! Explore ${sty.toLowerCase()} ${cat.toLowerCase()} and celebration ideas for your ${occ.toLowerCase()}.`;
+        }
+
+        plannerOccasion.addEventListener('change', updatePlanner);
+        plannerCategory.addEventListener('change', updatePlanner);
+        plannerStyle.addEventListener('change', updatePlanner);
+
+        // GALLERY RENDER & LIGHTBOX
+        let currentGalleryIndex = 0;
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+
+        function renderGallery() {
+            galleryGrid.innerHTML = '';
+            galleryImages.forEach((imgObj, index) => {
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+                item.innerHTML = `<img src="${imgObj.url}" alt="${imgObj.alt}">`;
+                item.addEventListener('click', () => openLightbox(index));
+                galleryGrid.appendChild(item);
+            });
+        }
+
+        function openLightbox(index) {
+            currentGalleryIndex = index;
+            lightboxImg.src = galleryImages[currentGalleryIndex].url;
+            lightbox.classList.add('active');
+        }
+
+        document.getElementById('lightboxClose').addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        document.getElementById('lightboxNext').addEventListener('click', () => {
+            currentGalleryIndex = (currentGalleryIndex + 1) % galleryImages.length;
+            lightboxImg.src = galleryImages[currentGalleryIndex].url;
+        });
+
+        document.getElementById('lightboxPrev').addEventListener('click', () => {
+            currentGalleryIndex = (currentGalleryIndex - 1 + galleryImages.length) % galleryImages.length;
+            lightboxImg.src = galleryImages[currentGalleryIndex].url;
+        });
+
+        window.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') lightbox.classList.remove('active');
+            if (e.key === 'ArrowRight') document.getElementById('lightboxNext').click();
+            if (e.key === 'ArrowLeft') document.getElementById('lightboxPrev').click();
+        });
+
+        // FAQ ACCORDION
+        document.querySelectorAll('.faq-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // CONTACT FORM VALIDATION
+        const inquiryForm = document.getElementById('inquiryForm');
+        const formSuccess = document.getElementById('formSuccess');
+
+        inquiryForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('fullName').value.trim();
+            const phone = document.getElementById('phoneNum').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (name && phone && message) {
+                formSuccess.style.display = 'block';
+                inquiryForm.reset();
+                setTimeout(() => {
+                    formSuccess.style.display = 'none';
+                }, 5000);
+            }
+        });
+
+        // INITIALIZATION
+        renderProducts(products);
+        renderGallery();
+    </script>
+</body>
+</html>
